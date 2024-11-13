@@ -1,0 +1,136 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "questions"
+    ],
+    "properties": {
+        "questions": {
+            "type": "array",
+            "default": [],
+            "title": "The questions Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "versionId",
+                    "text",
+                    "type"
+                ],
+                "properties": {
+                    "versionId": {
+                        "type": "integer",
+                        "title": "The versionId Schema",
+                        "examples": [
+                            1
+                        ]
+                    },
+                    "text": {
+                        "type": "string",
+                        "title": "The text Schema",
+                        "examples": [
+                            "Do you prefer movies or TV shows?",
+                            "What genre do you prefer?",
+                            "What language do you prefer?",
+                            "What is your preferred viewing time?",
+                            "What pace do you prefer in your movies/TV shows?"
+                        ]
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "The type Schema",
+                        "examples": [
+                            "contentType",
+                            "genre",
+                            "language",
+                            "viewingTime",
+                            "pace"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "versionId": 1,
+                    "text": "Do you prefer movies or TV shows?",
+                    "type": "contentType"
+                },
+                {
+                    "versionId": 1,
+                    "text": "What genre do you prefer?",
+                    "type": "genre"
+                },
+                {
+                    "versionId": 1,
+                    "text": "What language do you prefer?",
+                    "type": "language"
+                },
+                {
+                    "versionId": 1,
+                    "text": "What is your preferred viewing time?",
+                    "type": "viewingTime"
+                },
+                {
+                    "versionId": 1,
+                    "text": "What pace do you prefer in your movies/TV shows?",
+                    "type": "pace"
+                }]
+            },
+            "examples": [
+                [{
+                    "versionId": 1,
+                    "text": "Do you prefer movies or TV shows?",
+                    "type": "contentType"
+                },
+                {
+                    "versionId": 1,
+                    "text": "What genre do you prefer?",
+                    "type": "genre"
+                },
+                {
+                    "versionId": 1,
+                    "text": "What language do you prefer?",
+                    "type": "language"
+                },
+                {
+                    "versionId": 1,
+                    "text": "What is your preferred viewing time?",
+                    "type": "viewingTime"
+                },
+                {
+                    "versionId": 1,
+                    "text": "What pace do you prefer in your movies/TV shows?",
+                    "type": "pace"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "questions": [{
+            "versionId": 1,
+            "text": "Do you prefer movies or TV shows?",
+            "type": "contentType"
+        },
+        {
+            "versionId": 1,
+            "text": "What genre do you prefer?",
+            "type": "genre"
+        },
+        {
+            "versionId": 1,
+            "text": "What language do you prefer?",
+            "type": "language"
+        },
+        {
+            "versionId": 1,
+            "text": "What is your preferred viewing time?",
+            "type": "viewingTime"
+        },
+        {
+            "versionId": 1,
+            "text": "What pace do you prefer in your movies/TV shows?",
+            "type": "pace"
+        }]
+    }]
+}

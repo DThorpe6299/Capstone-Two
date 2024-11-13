@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "quiz_version_id",
+        "question_id",
+        "answer_id",
+        "quiz_instances_id"
+    ],
+    "properties": {
+        "quiz_version_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The quiz_version_id Schema",
+            "examples": [
+                1
+            ]
+        },
+        "question_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The question_id Schema",
+            "examples": [
+                2
+            ]
+        },
+        "answer_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The answer_id Schema",
+            "examples": [
+                3
+            ]
+        },
+        "quiz_instances_id": {
+            "type": "string",
+            "default": "",
+            "title": "The quiz_instances_id Schema",
+            "examples": [
+                "uuid-generated-instance-id"
+            ]
+        }
+    },
+    "examples": [{
+        "quiz_version_id": 1,
+        "question_id": 2,
+        "answer_id": 3,
+        "quiz_instances_id": "uuid-generated-instance-id"
+    }]
+}

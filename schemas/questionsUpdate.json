@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "text",
+        "type"
+    ],
+    "properties": {
+        "text": {
+            "type": "string",
+            "default": "",
+            "title": "The text Schema",
+            "examples": [
+                "Do you prefer movies or TV shows?"
+            ]
+        },
+        "type": {
+            "type": "string",
+            "default": "",
+            "title": "The type Schema",
+            "examples": [
+                "contentType"
+            ]
+        }
+    },
+    "examples": [{
+        "text": "Do you prefer movies or TV shows?",
+        "type": "contentType"
+    }]
+}

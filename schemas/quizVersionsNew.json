@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "version_number"
+    ],
+    "properties": {
+        "version_number": {
+            "type": "string",
+            "default": "",
+            "title": "The version_number Schema",
+            "examples": [
+                "2.0"
+            ]
+        }
+    },
+    "examples": [{
+        "version_number": "2.0"
+    }]
+}
